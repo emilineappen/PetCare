@@ -8,44 +8,72 @@ const products = [
   {
     id: 1,
     name: "Premium Dog Food",
-    price: 45.99,
+    price: 3499,
     category: "Food",
     image: "https://images.unsplash.com/photo-1589924691195-41432c84c161?q=80&w=800&auto=format&fit=crop",
   },
   {
     id: 2,
     name: "Cat Scratch Post",
-    price: 32.50,
+    price: 2450,
     category: "Toys",
     image: "https://images.unsplash.com/photo-1545249390-6bdfa286032f?q=80&w=800&auto=format&fit=crop",
   },
   {
     id: 3,
     name: "Squeaky Bone Toy",
-    price: 12.99,
+    price: 499,
     category: "Toys",
     image: "https://images.unsplash.com/photo-1576201836106-db1758fd1c97?q=80&w=800&auto=format&fit=crop",
   },
   {
     id: 4,
     name: "Adjustable Leash",
-    price: 18.99,
+    price: 899,
     category: "Accessories",
     image: "https://images.unsplash.com/photo-1598532163257-ae3c6b2524b6?q=80&w=800&auto=format&fit=crop",
   },
   {
     id: 5,
     name: "Comfort Bed",
-    price: 55.00,
+    price: 4500,
     category: "Furniture",
     image: "https://images.unsplash.com/photo-1591946614720-90a587da4a36?q=80&w=800&auto=format&fit=crop",
   },
   {
     id: 6,
     name: "Pet Carrier",
-    price: 49.99,
+    price: 3999,
     category: "Travel",
     image: "https://images.unsplash.com/photo-1601758177266-bc599de87707?q=80&w=800&auto=format&fit=crop",
+  },
+  {
+    id: 7,
+    name: "Organic Cat Food",
+    price: 2899,
+    category: "Food",
+    image: "https://images.unsplash.com/photo-1568640347023-a616a30bc3bd?q=80&w=800&auto=format&fit=crop",
+  },
+  {
+    id: 8,
+    name: "Pet Shampoo",
+    price: 649,
+    category: "Grooming",
+    image: "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?q=80&w=800&auto=format&fit=crop",
+  },
+  {
+    id: 9,
+    name: "Cat Litter (10kg)",
+    price: 1299,
+    category: "Grooming",
+    image: "https://images.unsplash.com/photo-1597843796321-230ff7362ba6?q=80&w=800&auto=format&fit=crop",
+  },
+  {
+    id: 10,
+    name: "Rope Tug Toy",
+    price: 399,
+    category: "Toys",
+    image: "https://images.unsplash.com/photo-1535930891776-0c2dfb7fda1a?q=80&w=800&auto=format&fit=crop",
   },
 ];
 
@@ -91,7 +119,7 @@ export default function Shopping() {
               <div className="flex justify-between items-start mb-4">
                 <div>
                   <h3 className="text-xl font-bold text-foreground mb-1 group-hover:text-primary transition-colors">{product.name}</h3>
-                  <p className="text-2xl font-bold text-primary">${product.price.toFixed(2)}</p>
+                  <p className="text-2xl font-bold text-primary">₹{product.price.toLocaleString("en-IN")}</p>
                 </div>
               </div>
               

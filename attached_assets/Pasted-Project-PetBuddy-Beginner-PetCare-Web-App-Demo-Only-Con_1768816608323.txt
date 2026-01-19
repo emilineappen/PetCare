@@ -1,0 +1,81 @@
+Project: PetBuddy – Beginner PetCare Web App (Demo Only)
+
+Context:
+- This is an academic, beginner-level demo project.
+- The app already exists with HTML, CSS, and JavaScript.
+- Authentication is DUMMY using localStorage only.
+- No cloud, no database, no real backend authentication.
+- Do NOT refactor into frameworks or advanced patterns.
+
+TASK:
+Improve and complete the existing application with the following changes and additions while keeping everything simple.
+
+--------------------------------
+1. Currency Change
+--------------------------------
+- Change all product prices from dollars ($) to Indian Rupees (₹).
+- Example: $10 → ₹799 (use realistic INR values).
+- Update currency symbol everywhere (Shopping page, Cart, summaries).
+
+--------------------------------
+2. Shopping Page Enhancements
+--------------------------------
+- Add more static pet products (total 8–10 items).
+- Example products:
+  - Dog Food
+  - Cat Food
+  - Pet Shampoo
+  - Dog Leash
+  - Pet Toys
+  - Pet Bed
+  - Cat Litter
+- Each product should show:
+  - Product name
+  - Price in ₹
+  - “Add to Cart” button (UI only, no payment logic)
+
+--------------------------------
+3. Consultation Confirmation Alert
+--------------------------------
+- When a user books a consultation:
+  - Show a clear alert message like:
+    “Consultation booked successfully with Dr. <Doctor Name>”
+- This alert must appear on the frontend immediately after booking.
+- Store consultation details in localStorage.
+
+--------------------------------
+4. Multiple Pet Profiles Support
+--------------------------------
+- Modify the Pet Profile feature to support MULTIPLE pets per user.
+- Reason: One household may have more than one pet.
+- Requirements:
+  - Allow adding multiple pets.
+  - Each pet should have:
+    - Pet Name
+    - Breed
+    - Age
+    - Medical History
+  - Display pets as a list or cards.
+  - Save all pet profiles in localStorage as an array.
+  - Allow viewing all saved pets on the Pet Profile page.
+
+--------------------------------
+5. Maintain Dummy Login Rules
+--------------------------------
+- Keep login system dummy.
+- No credential validation.
+- Use localStorage only.
+- Redirect unauthenticated users to Login page.
+
+--------------------------------
+6. UI & Code Rules
+--------------------------------
+- Keep UI clean and beginner-friendly.
+- Use plain HTML, CSS, and JavaScript only.
+- Add comments explaining logic clearly.
+- Do NOT introduce Firebase, APIs, payment gateways, or AI services.
+- Do NOT overcomplicate the code.
+
+--------------------------------
+GOAL:
+Enhance the existing PetBuddy demo app to feel more complete and realistic for presentation, while still being simple, offline, and beginner-friendly.

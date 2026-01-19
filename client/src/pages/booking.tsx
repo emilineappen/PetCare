@@ -46,11 +46,16 @@ export default function Booking() {
         createdAt: new Date().toISOString(),
       };
       
+      const vetName = vets.find(v => v.id === data.vetId)?.name;
+      
       localStorage.setItem("petcare_bookings", JSON.stringify([...existingBookings, newBooking]));
       
+      // Browser alert as requested
+      alert(`Consultation booked successfully with ${vetName}`);
+
       toast({
         title: "Appointment Confirmed!",
-        description: `Booked with ${vets.find(v => v.id === data.vetId)?.name} on ${format(data.date, "PPP")} at ${data.time}`,
+        description: `Booked with ${vetName} on ${format(data.date, "PPP")} at ${data.time}`,
       });
       
       setIsSubmitting(false);
