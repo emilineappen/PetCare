@@ -1,0 +1,89 @@
+Project: PetCare Web App (Beginner / Demo Only)
+
+IMPORTANT CONTEXT:
+- This application is ONLY for demo and academic purposes.
+- I do NOT want real authentication.
+- I do NOT want cloud, database, or backend authentication.
+- The login system must be DUMMY / FAKE.
+
+APP TYPE:
+- Simple web application
+- HTML, CSS, JavaScript only
+- No frameworks unless absolutely necessary
+
+USER TYPE:
+- Pet Owner only
+
+AUTHENTICATION (DUMMY ONLY):
+1. Create a Login Page
+   - Fields: Username or Email, Password
+   - Login button
+   - NO validation of credentials
+   - Clicking Login should ALWAYS succeed
+   - On login, store a dummy user object in localStorage
+     Example: { "name": "Pet Owner", "loggedIn": true }
+   - Redirect to Home page immediately
+
+2. Optional Register Page (Dummy)
+   - Fields: Name, Email
+   - Register button
+   - No real storage
+   - Redirect to Login page
+
+3. Session Handling:
+   - Use localStorage ONLY
+   - If dummy user exists → user is logged in
+   - If not → redirect to Login page
+   - Logout button clears localStorage
+
+APP PAGES (ALL REQUIRE DUMMY LOGIN):
+1. Home Page
+   - Title: "WELCOME TO PETBUDDY"
+   - Navigation links:
+     - Shopping
+     - AI Veterinarian
+     - Book Consultation
+     - Pet Profile
+     - Logout
+
+2. Shopping Page
+   - Static list of pet products
+   - Add to cart button (UI only, no payment)
+
+3. AI Veterinarian Page
+   - Simple chat-style UI
+   - Predefined responses (no real AI)
+
+4. Book Consultation Page
+   - Select vet name
+   - Select date
+   - Select time
+   - Confirm booking
+   - Store booking in localStorage
+
+5. Pet Profile Page
+   - Fields:
+     - Pet name
+     - Breed
+     - Age
+     - Medical history
+   - Save and display data using localStorage
+
+ACCESS CONTROL:
+- If user is not logged in (no dummy user in localStorage), redirect to Login page
+- Do NOT allow access to any page without login
+
+UI REQUIREMENTS:
+- Very simple and clean UI
+- Beginner-friendly layout
+- No complex animations
+- Add comments in code explaining each section
+
+DO NOT:
+- Do NOT implement real authentication
+- Do NOT use Firebase or any cloud service
+- Do NOT use payment gateways
+- Do NOT overengineer
+
+GOAL:
+Create a complete beginner-friendly PetCare app with a dummy login interface that looks real but works purely for demonstration.
