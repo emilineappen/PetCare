@@ -36,7 +36,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     const newUser = { name, loggedIn: true };
     localStorage.setItem("petcare_user", JSON.stringify(newUser));
     setUser(newUser);
-    setLocation("/");
+    // Force immediate location change to home
+    window.location.href = "/";
   };
 
   const logout = () => {
