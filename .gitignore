@@ -1,6 +1,24 @@
+# dependencies
 node_modules
+
+# production builds
 dist
+build
+
+# environment files
+.env
+.env.local
+
+# OS files
 .DS_Store
+
+# Vite / cache
+.vite
+
+# Server static build (generated)
 server/public
-vite.config.ts.*
+
+# Archives
 *.tar.gz
+.local
+
